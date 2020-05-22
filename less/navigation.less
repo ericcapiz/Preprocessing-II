@@ -2,6 +2,7 @@
 .navigation{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 25px 0;
     border-bottom: 2px dashed @navigation-border;
     @media @mobile {
@@ -13,17 +14,18 @@
         
     h1{
         margin-right: 100px;
+        @media @mobile {
+           margin-left: 70px;
+        }
        
     }
     nav{
-        margin-left: 250px;
+        margin-left: 20px;
         justify-content: end;
         align-self:center;
         @media @mobile {
             display: flex;
             flex-direction: row;
-            // justify-content: center;
-            // align-items: center;
             margin: 0;
             
         }
@@ -38,6 +40,9 @@
         color: black;
         margin-top: 20px;
         padding: 0 25px;
+        @media @mobile {
+            font-size: 1.5rem;
+        }
         }
         
         
